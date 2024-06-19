@@ -57,7 +57,8 @@
     <div>
       <h2>Components</h2>
       <ol>
-        <li><code>App</code> (grey) contains the entire app.</li>
+        <li><code>Home</code> (grey) contains the entire screen.</li>
+        <li><code>Header</code> (green) displays the title.</li>
         <li><code>ArticleTable</code> (blue) displays the list of articles.</li>
         <li>
           <code>ArticleRows</code> (lavender) displays a row for each article.
@@ -66,14 +67,19 @@
       <h2>Hierarchy</h2>
       <ul>
         <li>
-          <code>App</code>
+          <code>Home</code>
           <ul>
+            <li>
+              <code>Header <span class="links">Link to '/'</span></code>
+            </li>
             <li>
               <code>ArticleTable</code>
               <ul>
                 <li>
-                  <code>ArticleRows 
-                  <span class="hooks">useState & useEffect
+                  <code
+                    >ArticleRows
+                    <span class="hooks">useState, useEffect</span> and
+                    <span class="links">Link to '/article/:article_id' </span>
                   </code>
                 </li>
               </ul>
