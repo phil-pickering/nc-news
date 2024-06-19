@@ -8,6 +8,13 @@ body {
   padding: 0;
 }
 
+header {
+  border: 2px solid darkseagreen;
+  margin-block-end: 10px;
+  padding-block-start: 10px;
+  padding-inline-start: 10px;
+}
+
 h1 {
   margin-block-start: 0;
   font-size: 22px;
@@ -67,27 +74,28 @@ td:last-of-type {
   color: crimson;
 }
 
+.links {
+  color: orange;
+}
+
 img {
   width: 30%;
   padding: 10px 0;
 }
+
 p {
   max-width: 80%;
 }
 
 dd {
-  padding-block-end: 10px;
+  margin-inline-start: 0px;
+  margin-inline-end: 20px;
+  display: inline;
 }
 
 dt {
   font-weight: bold;
-}
-
-dd {
-  margin-inline-start: 0px;
-}
-
-article {
-  border: 2px solid pink;
-  padding: 0 10px;
+  display: inline;
+  text-transform: uppercase;
+  font-size: smaller;
 }
