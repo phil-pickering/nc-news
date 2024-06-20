@@ -99,3 +99,18 @@ dt {
   text-transform: uppercase;
   font-size: smaller;
 }
+
+ul.comments {
+  list-style-type: none;
+}
+
+li.comment-author {
+  margin-block-start: 10px;
+  margin-block-end: 20px;
+  font-weight: bold;
+}
+
+div.comments {
+  border: 2px solid cornflowerblue;
+  padding: 10px;
+}

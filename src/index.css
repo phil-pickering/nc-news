@@ -11,6 +11,16 @@ body {
   scroll-behavior: smooth;
 }
 
+header {
+  border-block-end: 1px solid lightgrey;
+  margin-block-end: 10px;
+  padding-block-end: 10px;
+}
+
+article {
+  padding: 10px 10px 10px 0;
+}
+
 h1 {
   margin-block-start: 0;
   font-size: 22px;
@@ -23,13 +33,15 @@ h2 {
   font-weight: 600;
 }
 
-th {
-  padding: 10px 10px 10px 0;
-  text-align: start;
+p {
+  margin-block-start: 20px;
+  line-height: 1.8;
 }
 
-td {
-  padding: 10px 40px 10px 0;
+img {
+  float: left;
+  padding-right: 20px;
+  margin-block-end: 20px;
 }
 
 a {
@@ -40,21 +52,15 @@ a:hover {
   text-decoration: underline;
 }
 
-article {
+th {
   padding: 10px 10px 10px 0;
+  text-align: start;
 }
 
-img {
-  float: left;
-  padding-right: 20px;
-  margin-block-end: 20px;
+td {
+  padding: 10px 40px 10px 0;
 }
 
-p {
-  margin-block-start: 20px;
-}
-
-p,
 dl {
   line-height: 1.8;
 }
@@ -75,17 +81,17 @@ button:hover {
   background: whitesmoke;
 }
 
+summary {
+  font-weight: 600;
+  margin: -10px -10px 0;
+  padding: 10px;
+}
+
 details {
   margin-block-start: 10px;
   border: 1px solid lightgrey;
   border-radius: 4px;
   padding: 10px 10px 0;
-}
-
-summary {
-  font-weight: 600;
-  margin: -10px -10px 0;
-  padding: 10px;
 }
 
 details[open] {
@@ -97,20 +103,57 @@ details[open] summary {
   margin-bottom: 10px;
 }
 
-li.comment {
+li.comment-date {
+  margin-inline-start: -14px;
   list-style-type: none;
-  margin-inline-start: -20px;
+  /* color: gray; */
+  font-size: smaller;
+  font-weight: 600;
 }
 
-li.comment-author {
-  list-style-type: "— ";
+li.comment {
+  margin-block-start: 5px;
+  list-style-type: none;
+  margin-inline-start: -14px;
+  margin-inline-end: 100px;
+  line-height: 1.8;
+}
+
+span.comment-author {
   margin-block-start: 5px;
   margin-inline-start: 5px;
   font-weight: 600;
 }
 
-header {
-  border-block-end: 1px solid lightgrey;
-  margin-block-end: 10px;
-  padding-block-end: 10px;
+textarea {
+  padding: 20px 15px;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  resize: none;
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(1px);
+}
+
+dialog {
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 16px lightgrey;
+}
+
+dialog[open] {
+  animation: slide-up 0.4s ease-out;
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
