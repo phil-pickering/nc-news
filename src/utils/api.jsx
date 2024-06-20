@@ -30,3 +30,14 @@ export function getComments(article_id) {
       console.log(err);
     });
 }
+
+export function patchLikes(article_id) {
+  return axios
+    .patch("https://nc-news-w1v4.onrender.com/api/articles/" + article_id, {
+      inc_votes: 1,
+    })
+    .then((response) => response.data.article)
+    .catch((err) => {
+      console.log(err);
+    });
+}

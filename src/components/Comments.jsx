@@ -14,13 +14,17 @@ export default function Comments() {
 
   return (
     <details>
-      <summary>Comments ({comments.length})</summary>
+      <summary>&nbsp;Comments ({comments.length})</summary>
       {comments.length ? (
         comments.map((comment) => {
+          let formattedDate = comment.created_at.slice(0, 10);
           return (
             <ul key={comment.comment_id}>
-              <li className="comment">"{comment.body}"</li>
-              <li className="comment-author">{comment.author}</li>
+              <li className="comment-date">{formattedDate}</li>
+              <li className="comment">
+                "{comment.body}" —
+                <span className="comment-author">{comment.author}</span>
+              </li>
             </ul>
           );
         })

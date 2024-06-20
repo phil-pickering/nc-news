@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Northcoders News 🗞</title>
+  </head>
+  <body>
+    <p>CORE: View a list of comments associated with an article</p>
+    <div>
+      <header>
+        <h1>Northcoders News 🗞</h1>
+      </header>
+      <main>
+        <article>
+<img src="https://images.pexels.com/photos/2403392/pexels-photo-2403392.jpeg?w=700&h=700" alt=""/>
+        <h2>The Notorious MSG’s Unlikely Formula For Success</h2>
+        <dl>
+          <dt>Author</dt>
+          <dd>grumpy19</dd>
+          <dt>Topic</dt>
+          <dd>Cooking</dd>
+          <dt>Date</dt>
+          <dd>2020-11-22</dd>
+          <dt>Votes</dt>
+          <dd>0</0>
+        </dl>
+        <p>The 'umami' craze has turned a much-maligned and misunderstood food additive into an object of obsession for the world’s most innovative chefs. But secret ingredient monosodium glutamate’s biggest secret may be that there was never anything wrong with it at all.</p>
+        </article>
+       <div class="comments">
+       <details>
+          <summary>Comments (5)</summary>
+            <ul class="comments">
+              <li>"Vitae laudantium molestiae neque ut dicta fuga similique. Sit nesciunt magni sit beatae. Porro recusandae aut exercitationem eligendi voluptas. Dolore eligendi inventore magni voluptatem quia ut ut."</li>
+              <li class="comment-author">grumpy19</li>
+              <li>"Possimus exercitationem unde temporibus id eos officiis. Qui veniam blanditiis porro omnis rerum. Vel iste nisi voluptatem autem illum aperiam velit."</li>
+              <li class="comment-author">grumpy19</li>
+              <li>"Sit dolores similique temporibus omnis. Reiciendis animi similique. Tempore inventore aperiam. Labore dolorem sint molestiae assumenda ipsum."</li>
+              <li class="comment-author">cooljmessy</li>
+              <li>"Fuga hic sed. Minus expedita eos aut. Enim dolores iure consequatur et consequatur dolor autem. Itaque consequatur quia. Ullam officia cumque nihil officiis. Earum error iure sed non earum."</li>
+              <li class="comment-author">jessjelly</li>
+              <li>"Molestiae ut esse a error necessitatibus doloribus eligendi nesciunt. Ea minus voluptatem quae maxime distinctio."</li>
+              <li class="comment-author">cooljmessy</li>
+            </ul>
+        </details>
+       </div>
+      </main>
+    </div>
+    <div>
+      <h2>Components</h2>
+      <ol>
+        <li><code>Article</code> (grey) contains the entire screen.</li>
+        <li><code>Header</code> (green) displays the title.</li>
+        <li><code>Comments</code> (blue) displays the list of comments.</li>
+      </ol>
+      <h2>Hierarchy</h2>
+      <ul>
+        <li>
+          <code>Article</code>
+          <span class="hooks">useState, useEffect & useParams</span>
+          <ul>
+            <li>
+              <code>Header</code>
+              <span class="links">Link to '/'</span>
+            </li>
+            <li>
+              <code>Comments</code>
+              <span class="hooks">useState, useEffect & useParams</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
