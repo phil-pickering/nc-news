@@ -6,9 +6,7 @@ export default function ArticleRows() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    getArticles().then((body) => {
-      setArticles(body);
-    });
+    getArticles().then((body) => setArticles(body));
   }, []);
 
   return (
@@ -18,9 +16,7 @@ export default function ArticleRows() {
           return (
             <tr key={article.article_id}>
               <td>
-                <Link to={"/article/" + article.article_id}>
-                  {article.title}
-                </Link>
+                <Link to={"/article/" + article.article_id}>{article.title}</Link>
               </td>
               <td>{article.author}</td>
               <td>{article.created_at.slice(0, 10)}</td>
