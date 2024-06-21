@@ -26,7 +26,6 @@ export default function Article() {
     );
 
   function handleLike() {
-    setLikes(likes + 1);
     patchLikes(article_id).then(() =>
       setArticle((article) => ({
         ...article,
